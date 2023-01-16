@@ -403,8 +403,8 @@
             <a class="contact" href="tel:+48111111111"> +48 111 111 111 </a>
           </address>
         </div>
-        <div>
-          <p class="footer-social-icons-header">Dołącz do nas</p>
+        <div class="social-wrapper">
+          <p class="footer-social-text">Dołącz do nas</p>
           <ul class="footer-social-icons-container">
             <li>
               <a href="#" class="footer-social-icon">
@@ -436,7 +436,18 @@
             </li>
           </ul>
         </div>
-      </div>
+        <form class="newslatter-wrapper">
+          <label for="newslatter-input" class="footer-text">Zapisz się do newslettera</label>
+          <div class="newslatter-container">
+            <input class="newslatter-input" id="newslatter-input" name="email" type="email" placeholder="E-mail">
+            <button type="submit" class="newslatter-button"> Zapisz się
+              <svg class="newslatter-icon" width="24px" height="24px">
+                <use href="/images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
     </footer>
 
     <!-- MODAL -->
@@ -448,7 +459,59 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
+      <form class="modal-wrapper">
+        <div role="group" aria-labelledby="name">
+          <label for="name" class="modal-form-label">Imię</label>
+          <div class="modal-form-box">
+            <input id="name" name="name" type="text" required class="modal-form-input">
+            <svg height="12px" width="12px" class="modal-form-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+        <div role="group" aria-labelledby="tel">
+          <label for="tel" class="modal-form-label">Telefon</label>
+          <div class="modal-form-box">
+            <input id="tel" name="tel" type="tel" required class="modal-form-input">
+            <svg height="13px" width="13px" class="modal-form-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div role="group" aria-labelledby="email">
+          <label for="email" class="modal-form-label">Email</label>
+          <div class="modal-form-box">
+            <input id="email" name="email" type="email" required class="modal-form-input">
+            <svg height="12px" width="15px" class="modal-form-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div role="group" aria-labelledby="comment">
+          <label for="comment" class="modal-form-label">Komentarz</label>
+          <div>
+            <textarea id="comment" name="comment" class="modal-form-textarea" placeholder="Wprowadź tekst"></textarea>
+          </div>
+        </div>
+        <label class="modal-form-policy-agreement-label">
+          <input type="checkbox" id="policy-agreement" name="policy-agreement" value="agreed"
+          required class="modal-form-agreement-checkbox"/>
+         <svg
+          width="15"
+          height="12"
+          class="modal-form-agreement-custom-checkbox">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        Oświadczam iż akceptuję 
+        <a href="" class="modal-form-link">Regulamin</a> 
+        i
+        <a href="" class="modal-form-link"> Politykę Prywatności.</a>
+      </label>
+      <button type="submit" class="modal-form-button">Wyślij</button>        
+      </form>
       </div>
+      
     </div>
 
     <script src="./js/modal.js"></script>

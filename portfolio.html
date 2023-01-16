@@ -302,8 +302,8 @@
             <a class="contact" href="tel:+48111111111"> +48 111 111 111 </a>
           </address>
         </div>
-        <div>
-          <p class="footer-social-icons-header">Dołącz do nas</p>
+        <div class="social-wrapper">
+          <p class="footer-social-text">Dołącz do nas</p>
           <ul class="footer-social-icons-container">
             <li>
               <a href="#" class="footer-social-icon">
@@ -335,7 +335,18 @@
             </li>
           </ul>
         </div>
-      </div>
+        <form class="newslatter-wrapper">
+          <label for="newslatter-input" class="footer-text">Zapisz się do newslettera</label>
+          <div class="newslatter-container">
+            <input class="newslatter-input" id="newslatter-input" name="email" type="email" placeholder="E-mail">
+            <button type="submit" class="newslatter-button"> Zapisz się
+              <svg class="newslatter-icon" width="24px" height="24px">
+                <use href="/images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
     </footer>
   </body>
 </html>
